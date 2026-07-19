@@ -59,5 +59,7 @@ git branch -D 分支名1 #强制删除
 ```
 远程仓库：
 ```bash
-
+git remote add origin https://github.com/Flamevo/LearningNotes.git
+git branch -M main
+git push -u origin main
 ```
