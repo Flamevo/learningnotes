@@ -59,7 +59,18 @@ git branch -D 分支名1 #强制删除
 ```
 远程仓库：
 ```bash
+#添加远程仓库
 git remote add origin https://github.com/Flamevo/LearningNotes.git
-git branch -M main
-git push -u origin main
+#查看远程仓库
+git remote
+#推送到远程仓库
+git push [-f][--set-upstream][远端名称[本地分支名][:远端分支名]]
+#若当前分支已经和远端关联
+git push
+#克隆
+git clone ...
+#抓取
+git fetch [remote name][branch name] #抓取指令就是将仓库里的更新都抓取到本地，不会进行合并
+#拉取
+git pull [remote name][branch name] #等同于fetch + merge
 ```
